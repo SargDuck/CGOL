@@ -1,7 +1,5 @@
-﻿namespace ConwaysGameOfLife
-{
-    partial class CGOLForm
-    {
+﻿namespace ConwaysGameOfLife {
+    partial class CGOLForm {
 
         // Defines all components
         private System.ComponentModel.IContainer components = null;
@@ -36,18 +34,15 @@
         private System.Windows.Forms.Label fillLabel;
         private System.Windows.Forms.Label templatePatternsLabel;
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
         }
 
         // Initializes all components
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.gridUIpicBox = new System.Windows.Forms.PictureBox();
             this.startButton = new System.Windows.Forms.Button();
             this.gridSizeRowsTextBox = new System.Windows.Forms.TextBox();
@@ -86,8 +81,6 @@
             this.gridUIpicBox.Location = new System.Drawing.Point(0, 0);
             this.gridUIpicBox.Name = "gridUIpicBox";
             this.gridUIpicBox.Size = new System.Drawing.Size(2333, 1046);
-            this.gridUIpicBox.TabIndex = 0;
-            this.gridUIpicBox.TabStop = false;
             this.gridUIpicBox.Paint += new System.Windows.Forms.PaintEventHandler(this.GridUIpicBox_Paint);
             this.gridUIpicBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.GridUIpicBox_MouseClick);
             
@@ -296,7 +289,6 @@
             this.fillLabel.Name = "fill";
             this.fillLabel.Size = new System.Drawing.Size(34, 16);
             this.fillLabel.AutoSize = true;
-
             this.fillLabel.Text = "% fill";
 
             // Template Patterns Label
@@ -345,9 +337,6 @@
             this.gridPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-
-        
+        } 
     }
 }
