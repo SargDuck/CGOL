@@ -1,0 +1,10 @@
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\bin\Release\ConwaysGameOfLife.exe.config
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\bin\Release\ConwaysGameOfLife.exe
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\bin\Release\ConwaysGameOfLife.pdb
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.csproj.AssemblyReference.cache
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.CGOLForm.resources
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.Properties.Resources.resources
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.csproj.GenerateResource.cache
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.csproj.CoreCompileInputs.cache
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.exe
+C:\Users\qwert\OneDrive\Desktop\CGOL\semproject\ConwaysGameOfLife\ConwaysGameOfLife\obj\Release\ConwaysGameOfLife.pdb
