@@ -457,10 +457,8 @@ namespace ConwaysGameOfLife {
             return liveCells;
         }
 
-        private void AddGlider(int startX, int startY)
-        {
-            if (startX < cols - 2 && startY < rows - 2)
-            {
+        private void AddGlider(int startX, int startY) {
+            if (startX < cols - 2 && startY < rows - 2) {
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY + 1, startX + 2] = true;
                 currentGen[startY + 2, startX] = true;
@@ -472,20 +470,16 @@ namespace ConwaysGameOfLife {
         // All add pattern functions follow one of 2 formulas
         // directly settings the cells
         // or defining the offset and setting the cells through the offset
-        private void AddBlinker(int startX, int startY)
-        {
-            if (startX < cols - 1 && startY < rows - 1)
-            {
+        private void AddBlinker(int startX, int startY) {
+            if (startX < cols - 1 && startY < rows - 1) {
                 currentGen[startY, startX] = true;
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY, startX + 2] = true;
             }
         }
 
-        private void AddPulsar(int startX, int startY)
-        {
-            if (startX >= 0 && startX + 12 < cols && startY >= 0 && startY + 12 < rows)
-            {
+        private void AddPulsar(int startX, int startY) {
+            if (startX >= 0 && startX + 12 < cols && startY >= 0 && startY + 12 < rows) {
                 int[][] offsets = {
                     new int[] { 2, 0 }, new int[] { 3, 0 }, new int[] { 4, 0 }, new int[] {8,0}, new int[] {9,0},new int[] {10,0},
                     new int[] { 2, 12 }, new int[] { 3, 12 }, new int[] { 4, 12 }, new int[] {8,12}, new int[] {9,12},new int[] {10,12},
@@ -496,18 +490,14 @@ namespace ConwaysGameOfLife {
                     new int[] { 2, 5 }, new int[] { 3, 5 }, new int[] { 4, 5 }, new int[] { 8, 5 }, new int[] { 9, 5 }, new int[] { 10, 5 },
                     new int[] { 2, 7 }, new int[] { 3, 7 }, new int[] { 4, 7 }, new int[] { 8, 7 }, new int[] { 9, 7 }, new int[] { 10, 7 },
                 };
-
-                foreach (var offset in offsets)
-                {
+                foreach (var offset in offsets) {
                     currentGen[startY + offset[1], startX + offset[0]] = true;
                 }
             }
         }
 
-        private void AddBlock(int startX, int startY)
-        {
-            if (startX < cols - 1 && startY < rows - 1)
-            {
+        private void AddBlock(int startX, int startY) {
+            if (startX < cols - 1 && startY < rows - 1) {
                 currentGen[startY, startX] = true;
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY + 1, startX] = true;
@@ -515,10 +505,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddBeehive(int startX, int startY)
-        {
-            if (startX < cols - 2 && startY < rows - 1)
-            {
+        private void AddBeehive(int startX, int startY) {
+            if (startX < cols - 2 && startY < rows - 1) {
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY, startX + 2] = true;
                 currentGen[startY + 1, startX] = true;
@@ -528,10 +516,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddLoaf(int startX, int startY)
-        {
-            if (startX < cols - 2 && startY < rows - 2)
-            {
+        private void AddLoaf(int startX, int startY) {
+            if (startX < cols - 2 && startY < rows - 2) {
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY, startX + 2] = true;
                 currentGen[startY + 1, startX] = true;
@@ -542,10 +528,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddBoat(int startX, int startY)
-        {
-            if (startX < cols - 2 && startY < rows - 1)
-            {
+        private void AddBoat(int startX, int startY) {
+            if (startX < cols - 2 && startY < rows - 1) {
                 currentGen[startY, startX] = true;
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY + 1, startX] = true;
@@ -554,10 +538,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddTub(int startX, int startY)
-        {
-            if (startX < cols - 1 && startY < rows - 1)
-            {
+        private void AddTub(int startX, int startY) {
+            if (startX < cols - 1 && startY < rows - 1) {
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY + 1, startX] = true;
                 currentGen[startY + 1, startX + 2] = true;
@@ -565,10 +547,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddBeacon(int startX, int startY)
-        {
-            if (startX < cols - 3 && startY < rows - 3)
-            {
+        private void AddBeacon(int startX, int startY) {
+            if (startX < cols - 3 && startY < rows - 3) {
                 currentGen[startY, startX] = true;
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY + 1, startX] = true;
@@ -580,10 +560,8 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddToad(int startX, int startY)
-        {
-            if (startX < cols - 3 && startY < rows - 1)
-            {
+        private void AddToad(int startX, int startY) {
+            if (startX < cols - 3 && startY < rows - 1) {
                 currentGen[startY, startX + 1] = true;
                 currentGen[startY, startX + 2] = true;
                 currentGen[startY, startX + 3] = true;
@@ -593,62 +571,46 @@ namespace ConwaysGameOfLife {
             }
         }
 
-        private void AddPentaDecathlon(int startX, int startY)
-        {
-            if (startX < cols - 3 && startY < rows - 11)
-            {
+        private void AddPentaDecathlon(int startX, int startY) {
+            if (startX < cols - 3 && startY < rows - 11) {
                 int[][] offsets = {
                     new int[] { 1, 0 }, new int[] { 1, 1 }, new int[] { 0, 2 }, new int[] { 2, 2 }, new int[] { 1, 3 }, new int[] { 1, 4 }, new int[] { 1, 5 }, new int[] { 1, 6 }, new int[] { 1, 9 }, new int[] { 1, 8 }, new int[] { 0, 7}, new int[] { 2, 7 },
                 };
-
-                foreach (var offset in offsets)
-                {
+                foreach (var offset in offsets) {
                     currentGen[startY + offset[1], startX + offset[0]] = true;
                 }
             }
         }
 
-        private void AddLWSS(int startX, int startY)
-        {
-            if (startX < cols - 4 && startY < rows - 3)
-            {
+        private void AddLWSS(int startX, int startY) {
+            if (startX < cols - 4 && startY < rows - 3) {
                 int[][] offsets = {
                     new int[] { 1, 0 }, new int[] { 4, 0 }, new int[] { 0, 1 }, new int[] { 0, 2 }, new int[] { 4, 2 }, new int[] { 0, 3 }, new int[] { 1, 3 }, new int[] { 2, 3 }, new int[] { 3, 3 }
                 };
-
-                foreach (var offset in offsets)
-                {
+                foreach (var offset in offsets) {
                     currentGen[startY + offset[1], startX + offset[0]] = true;
                 }
             }
         }
 
-        private void AddMWSS(int startX, int startY)
-        {
-            if (startX < cols - 6 && startY < rows - 4)
-            {
+        private void AddMWSS(int startX, int startY) {
+            if (startX < cols - 6 && startY < rows - 4) {
                 int[][] offsets = {
                     new int[] { 3, 0 }, new int[] { 1, 1 }, new int[] { 5, 1 }, new int[] { 5, 3 }, new int[] { 0, 2 }, new int[] { 0, 2 }, new int[] { 0, 3 }, new int[] { 0, 4 }, new int[] { 1, 4 }, new int[] { 2, 4 }, new int[] { 3, 4 }, new int[] { 4, 4 }
                 };
-
-
-                foreach (var offset in offsets)
-                {
+                foreach (var offset in offsets) {
                     currentGen[startY + offset[1], startX + offset[0]] = true;
                 }
             }
         }
 
-        private void AddHWSS(int startX, int startY)
-        {
-            if (startX < cols - 6 && startY < rows - 3)
-            {
+        private void AddHWSS(int startX, int startY) {
+            if (startX < cols - 6 && startY < rows - 3) {
                 int[][] offsets = {
                     new int[] { 3, 0 }, new int[] { 4, 0 }, new int[] { 1, 1 }, new int[] { 6, 1 }, new int[] { 0, 2 }, new int[] { 0, 2 }, new int[] { 0, 3 }, new int[] { 6, 3 }, new int[] { 0, 4 }, new int[] { 1, 4 }, new int[] { 2, 4 }, new int[] { 3, 4 }, new int[] { 4, 4 }, new int[] { 5, 4 }
                 };
 
-                foreach (var offset in offsets)
-                {
+                foreach (var offset in offsets) {
                     currentGen[startY + offset[1], startX + offset[0]] = true;
                 }
             }
