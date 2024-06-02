@@ -34,13 +34,6 @@
         private System.Windows.Forms.Label fillLabel;
         private System.Windows.Forms.Label templatePatternsLabel;
 
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
         // Initializes all components
         private void InitializeComponent() {
             this.gridUIpicBox = new System.Windows.Forms.PictureBox();

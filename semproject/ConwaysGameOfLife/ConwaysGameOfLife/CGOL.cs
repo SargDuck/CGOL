@@ -55,6 +55,7 @@ namespace ConwaysGameOfLife {
         public CGOLForm() {
             InitializeComponent();
             InitializeGame();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         // initialize all variables that need initialization and starts the timer
