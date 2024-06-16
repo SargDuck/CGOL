@@ -95,7 +95,7 @@ namespace ConwaysGameOfLife {
             Array.Clear(bornCells, 0, bornCells.Length);
 
             int newBornCells = 0;
-            int diedCells = 0;
+            int currentDeadCells = 0;
 
             // Loops through the whole grid
             for (int y = 0; y < rows; y++) {
@@ -106,7 +106,7 @@ namespace ConwaysGameOfLife {
                         // If any ALIVE cell has 2 or 3 alive neighbors, it remains alive. Otherwise, it dies
                         nextGen[y, x] = aliveNeighbors == 2 || aliveNeighbors == 3;
                         if (!nextGen[y, x]) {
-                            diedCells++;
+                            currentDeadCells++;
                         }
                     }
                     else {
@@ -128,7 +128,7 @@ namespace ConwaysGameOfLife {
 
             gens++;
             newCells = newBornCells;
-            deadCells = diedCells;
+            deadCells = currentDeadCells;
 
         }
 
