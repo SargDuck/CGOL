@@ -8,7 +8,7 @@ Available inside the CGOL.cs and CGOL.Designer.cs files.
 
 ## User Guide:
 
-To start the applications, simply download the files and go to ConwaysGameOfLife/ConwaysGameOfLife/bin/Release and launch the ConwaysGameOfLife.exe file
+To start the application, simply download the files and go to ConwaysGameOfLife/ConwaysGameOfLife/bin/Release and launch the ConwaysGameOfLife.exe file
 
 ### Start and Stop Button:
 - **Function:** Starts or stops the simulation.
