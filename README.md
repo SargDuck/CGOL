@@ -2,7 +2,13 @@
 
 This program enables you to run Conway’s Game of Life with various features such as saving and loading custom patterns, adjusting dimensions, changing colors, and more. Please refer to the user guide below for detailed instructions.
 
+## Dev documentation:
+
+Available inside the CGOL.cs and CGOL.Designer.cs files.
+
 ## User Guide:
+
+To start the applications, simply download the files and go to ConwaysGameOfLife/ConwaysGameOfLife/bin/Release and launch the ConwaysGameOfLife.exe file
 
 ### Start and Stop Button:
 - **Function:** Starts or stops the simulation.
