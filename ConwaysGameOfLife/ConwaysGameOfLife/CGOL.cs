@@ -1,4 +1,4 @@
-﻿// imports of used libraries
+// imports of used libraries
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -393,13 +393,20 @@ namespace ConwaysGameOfLife {
                 Filter = "Life Files|*.life"
             };
             if (openFileDialog.ShowDialog() == DialogResult.OK) {
+                List<string> lines = new List<string>();
                 using (StreamReader reader = new StreamReader(openFileDialog.FileName)) {
-                    for (int y = 0; y < rows; y++) {
-                        string line = reader.ReadLine();
-                        for (int x = 0; x < cols; x++) {
-                            // Works the same way until we reach
-                            // if the x,y contains 1, sets the cell at x,y to true
-                            currentGen[y, x] = line[x] == '1';
+                    string line;
+                    while ((line = reader.ReadLine()) != null) {
+                        lines.Add(line);
+                    }
+                }
+                rows = lines.Count;
+                cols = lines[0].Length;
+                InitializeGame();
+                for (int y = 0; y < rows; y++) {
+                    for (int x = 0; x < cols; x++) {
+                        if (x < lines[y].Length) {
+                            currentGen[y, x] = lines[y][x] == '1';
                         }
                     }
                 }
@@ -407,6 +414,7 @@ namespace ConwaysGameOfLife {
                 UpdateStats();
             }
         }
+
 
         // Handles what happens when the randomize button is clicked
         private void RandomizeButton_Click(object sender, EventArgs e) {
