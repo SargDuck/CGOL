@@ -388,6 +388,7 @@ namespace ConwaysGameOfLife {
         }
 
         // Handles how the file is loaded when the load button is clicked
+        // Works the exact same way as the save function with an additional feature
         private void LoadButton_Click(object sender, EventArgs e) {
             OpenFileDialog openFileDialog = new OpenFileDialog {
                 Filter = "Life Files|*.life"
@@ -400,9 +401,12 @@ namespace ConwaysGameOfLife {
                         lines.Add(line);
                     }
                 }
+                // The function reads the file and creates a list of strings with the content of the file
+                // It then checks the rows and columns of the list and adjusts the grid dimensions accordingly
                 rows = lines.Count;
                 cols = lines[0].Length;
                 InitializeGame();
+                // The function continues reading and loading the cells normally from the list
                 for (int y = 0; y < rows; y++) {
                     for (int x = 0; x < cols; x++) {
                         if (x < lines[y].Length) {
